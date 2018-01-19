@@ -1,0 +1,10 @@
+<!-- show lcoal json data -->
+<p>
+  {{someData}}
+</p>
+
+<!-- iterate every img from server -->
+<p *ngFor="let item of list; let i = index">
+  Image Index Number: {{i}}
+  <img [src]="mediaURL + item.filename"/>
+</p>
